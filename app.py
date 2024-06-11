@@ -102,7 +102,7 @@ def get_closest_museums(museums, max_distance, max_time):
 
 # Reduce the number of museums to visit per day based on distance and visit time
 for day, museums in clusters.items():
-    clusters[day] = get_closest_museums(museums, max_distance=10, max_time=5)  # Replace 10 and 8 with your desired maximum distance and time
+    clusters[day] = get_closest_museums(museums, max_distance=10, max_time=6)  # Replace 10 and 8 with your desired maximum distance and time
 
 for day, museums in clusters.items():
     print(f"Day recalculated {day + 1}:")
@@ -121,24 +121,35 @@ gmaps = googlemaps.Client(key='AIzaSyARvB2VPh9VAMXq6AmiXNbvhnf24YZ2ybk')
 
 def get_route(museums):
     waypoints = [f"{museum['latitude']},{museum['longitude']}" for museum in museums]
-    start = waypoints[0]
-    end = waypoints[-1]
-    waypoints = waypoints[1:-1]
-    
-    directions = gmaps.directions(
-        origin=start,
-        destination=end,
-        waypoints=waypoints,
-        mode="transit"
-    )
+    directions = []
+    for i in range(len(waypoints) - 1):
+        start = waypoints[i]
+        end = waypoints[i + 1]
+        direction = gmaps.directions(
+            origin=start,
+            destination=end,
+            mode="transit"
+        )
+        # aggregate the from and to museums data to the direction
+        direction[0]['from'] = museums[i]
+        direction[0]['to'] = museums[i + 1]        
+        directions.extend(direction)
     return directions
 
 # Get optimized routes for each cluster
 for day, museums in clusters.items():
-    print(f"Day {day + 1}:")
     route = get_route(museums)
-    for step in route[0]['legs'][0]['steps']:
-        print(step['html_instructions'])
+    print('\n**********************') 
+    print(f"Day {day + 1}:")
+    print('**********************')
+    for i, leg in enumerate(route):
+        from_museum = leg['from']['title']
+        to_museum = leg['to']['title']
+        print('\n--------------------------')
+        print(f"From: {from_museum} to {to_museum}")
+        print('--------------------------')
+        for step in leg['legs'][0]['steps']:
+            print(step['html_instructions'])
 
 
 # TODO: Add the code to display the route on a map
