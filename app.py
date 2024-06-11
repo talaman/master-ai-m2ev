@@ -1,7 +1,11 @@
-# ----data----
-
-
 import json
+from sklearn.cluster import KMeans
+import numpy as np
+from math import radians, cos, sin, asin, sqrt
+import googlemaps
+import os
+
+# ----data----
 
 # Load JSON data
 with open('museos.json') as f:
@@ -21,22 +25,13 @@ for item in data['@graph']:
     }
     museums.append(museum)
 
-# Print extracted data
-# for museum in museums:
-#     print(museum)
-
-
 # ----clustering----
-
-
-from sklearn.cluster import KMeans
-import numpy as np
 
 # Extract coordinates
 coordinates = np.array([(museum['latitude'], museum['longitude']) for museum in museums])
 
 # Number of clusters (days)
-num_days = 3  # Adjust based on the number of days
+num_days = int(input("Enter the number of days: "))  # Prompt for the number of days
 
 # Perform clustering
 kmeans = KMeans(n_clusters=num_days, random_state=0).fit(coordinates)
@@ -58,24 +53,7 @@ while True:
     museum_to_move = clusters[max_cluster].pop()
     clusters[min_cluster].append(museum_to_move)
 
-# Print clusters
-for day, museums in clusters.items():
-    print(f"Day {day + 1}:")
-    for museum in museums:
-        print(f"  - {museum['title']} at {museum['address']}")
-
-# reduce the number of museums to visit per day based on the visit_time (an int that 1 is an hour), the maximum hours per day is 8\
-
-# for day, museums in clusters.items():
-#     total_hours = 0
-#     for museum in museums:
-#         total_hours += museum['visit_time']
-#     while total_hours > 4:
-#         max_museum = max(museums, key=lambda x: x['visit_time'])
-#         museums.remove(max_museum)
-#         total_hours -= max_museum['visit_time']
-
-from math import radians, cos, sin, asin, sqrt
+# ----Reduce the number of museums to visit per day based on distance and visit time----
 
 def calculate_distance(museum1, museum2):
     # Convert latitude and longitude from degrees to radians
@@ -100,24 +78,18 @@ def get_closest_museums(museums, max_distance, max_time):
                 total_time += museum['visit_time']
     return closest_museums
 
+# Prompt for the maximum distance and time per day
+max_distance = float(input("Enter the maximum distance per day (in kilometers): "))
+max_time = int(input("Enter the maximum time per day (in hours): "))
+
 # Reduce the number of museums to visit per day based on distance and visit time
 for day, museums in clusters.items():
-    clusters[day] = get_closest_museums(museums, max_distance=10, max_time=6)  # Replace 10 and 8 with your desired maximum distance and time
-
-for day, museums in clusters.items():
-    print(f"Day recalculated {day + 1}:")
-    for museum in museums:
-        print(f"  - {museum['title']} at {museum['address']}")
+    clusters[day] = get_closest_museums(museums, max_distance=max_distance, max_time=max_time)
 
 # ----Optimize route----
 
-import googlemaps
-import os
-from sklearn.cluster import KMeans
-import numpy as np
-
 # Initialize Google Maps client
-gmaps = googlemaps.Client(key='AIzaSyARvB2VPh9VAMXq6AmiXNbvhnf24YZ2ybk')
+gmaps = googlemaps.Client(key='AIzaSyARvB2VPh9VAMXq6AmiXNbvhnf24YZ2ybk')  # Replace 'YOUR_API_KEY' with your actual API key
 
 def get_route(museums):
     waypoints = [f"{museum['latitude']},{museum['longitude']}" for museum in museums]
@@ -150,9 +122,3 @@ for day, museums in clusters.items():
         print('--------------------------')
         for step in leg['legs'][0]['steps']:
             print(step['html_instructions'])
-
-
-# TODO: Add the code to display the route on a map
-# TODO: fix more than 2 museums per day
-# TODO: priority
-
