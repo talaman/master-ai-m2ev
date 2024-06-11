@@ -4,19 +4,20 @@
 import json
 
 # Load JSON data
-with open('201132-0-museos.json') as f:
+with open('museos.json') as f:
     data = json.load(f)
 
 # Extract relevant information
 museums = []
-for item in data['@graph'][13:17]:
+for item in data['@graph']:
     museum = {
         'id': item['id'],
         'title': item['title'],
         'latitude': item['location']['latitude'],
         'longitude': item['location']['longitude'],
         'address': item['address']['street-address'],
-        'schedule': item['organization']['schedule']
+        'schedule': item['organization']['schedule'],
+        'visit_time': item['visit_time']  
     }
     museums.append(museum)
 
@@ -35,7 +36,7 @@ import numpy as np
 coordinates = np.array([(museum['latitude'], museum['longitude']) for museum in museums])
 
 # Number of clusters (days)
-num_days = 2  # Adjust based on the number of days
+num_days = 3  # Adjust based on the number of days
 
 # Perform clustering
 kmeans = KMeans(n_clusters=num_days, random_state=0).fit(coordinates)
@@ -60,6 +61,22 @@ while True:
 # Print clusters
 for day, museums in clusters.items():
     print(f"Day {day + 1}:")
+    for museum in museums:
+        print(f"  - {museum['title']} at {museum['address']}")
+
+# reduce the number of museums to visit per day based on the visit_time (an int that 1 is an hour), the maximum hours per day is 8\
+
+for day, museums in clusters.items():
+    total_hours = 0
+    for museum in museums:
+        total_hours += museum['visit_time']
+    while total_hours > 4:
+        max_museum = max(museums, key=lambda x: x['visit_time'])
+        museums.remove(max_museum)
+        total_hours -= max_museum['visit_time']
+
+for day, museums in clusters.items():
+    print(f"Day recalculated {day + 1}:")
     for museum in museums:
         print(f"  - {museum['title']} at {museum['address']}")
 
