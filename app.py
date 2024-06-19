@@ -45,7 +45,7 @@ for item in data['@graph']:
 coordinates = np.array([(museum['latitude'], museum['longitude']) for museum in museums])
 
 # Number of clusters (days)
-num_days = int(input("Enter the number of days: "))  # Prompt for the number of days
+num_days = int(input("Ingrese el número de días: "))  # Prompt for the number of days
 
 # Perform clustering
 kmeans = KMeans(n_clusters=num_days, random_state=0).fit(coordinates)
@@ -94,8 +94,8 @@ def get_closest_museums(museums, max_distance, max_time):
     return closest_museums
 
 # Prompt for the maximum distance and time per day
-max_distance = float(input("Enter the maximum distance per day (in kilometers): "))
-max_time = int(input("Enter the maximum time per day (in hours): "))
+max_distance = float(input("Ingrese la distancia máxima por día (en kilómetros): "))
+max_time = int(input("Ingrese el tiempo máximo por día (en horas): "))
 
 # Reduce the number of museums to visit per day based on distance and visit time
 for day, museums in clusters.items():
@@ -127,19 +127,19 @@ def get_route(museums):
 for day, museums in clusters.items():
     route = get_route(museums)
     print('\n**********************') 
-    print(f"Day {day + 1}:")
+    print(f"Día {day + 1}:")
     print('**********************')
     for i, leg in enumerate(route):
         if i== 0:
             print('\n--------------------------')
-            print(f"Start at {leg['from']['title']}")
+            print(f"Comienza en {leg['from']['title']}")
             print('--------------------------')
              
 
         from_museum = leg['from']['title']
         to_museum = leg['to']['title']
         print('\n--------------------------')
-        print(f"From: {from_museum} to {to_museum}")
+        print(f"Desde: {from_museum} hasta {to_museum}")
         print('--------------------------')
         for step in leg['legs'][0]['steps']:
             print(step['html_instructions'])
