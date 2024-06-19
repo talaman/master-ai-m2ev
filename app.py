@@ -1,9 +1,22 @@
+import subprocess
+import importlib
 import json
-from sklearn.cluster import KMeans
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
+import importlib.util
+# ---- installations ----
+# Install scikit-learn if not installed
+
+
+if importlib.util.find_spec("sklearn") is None:
+    subprocess.run(['pip', 'install', 'scikit-learn'])
+
+# Install googlemaps if not installed
+if importlib.util.find_spec("googlemaps") is None:
+    subprocess.run(['pip', 'install', 'googlemaps'])
+
+from sklearn.cluster import KMeans
 import googlemaps
-import os
 
 # ----data----
 
