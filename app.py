@@ -115,7 +115,8 @@ def get_route(museums):
         direction = gmaps.directions(
             origin=start,
             destination=end,
-            mode="transit"
+            mode="transit",
+            language="es"
         )
         # aggregate the from and to museums data to the direction
         direction[0]['from'] = museums[i]
