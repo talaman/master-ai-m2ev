@@ -21,7 +21,8 @@ for item in data['@graph']:
         'longitude': item['location']['longitude'],
         'address': item['address']['street-address'],
         'schedule': item['organization']['schedule'],
-        'visit_time': item['visit_time']  
+        'visit_time': item['visit_time'],
+        'priority': item['priority']
     }
     museums.append(museum)
 
@@ -76,6 +77,7 @@ def get_closest_museums(museums, max_distance, max_time):
             if total_time + museum['visit_time'] <= max_time:
                 closest_museums.append(museum)
                 total_time += museum['visit_time']
+    closest_museums.sort(key=lambda x: (x['priority'], x['visit_time']), reverse=True)
     return closest_museums
 
 # Prompt for the maximum distance and time per day
@@ -115,6 +117,12 @@ for day, museums in clusters.items():
     print(f"Day {day + 1}:")
     print('**********************')
     for i, leg in enumerate(route):
+        if i== 0:
+            print('\n--------------------------')
+            print(f"Start at {leg['from']['title']}")
+            print('--------------------------')
+             
+
         from_museum = leg['from']['title']
         to_museum = leg['to']['title']
         print('\n--------------------------')

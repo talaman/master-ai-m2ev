@@ -42,7 +42,8 @@
 		"frequency": "c:freq",
 		"interval": "c:interval",
 		"audience": "dc:audience",
-		"visit_time": "c:duration"
+		"visit_time": "c:duration",
+		"priority": "c:priority"
 	},
 	"@graph": [
 	
@@ -74,7 +75,8 @@
 			"services": "",
 			"organization-name": "Casa Museo Fuente del Rey"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4847190-casa-museo-lope-vega.json",
@@ -104,7 +106,8 @@
 			"services": "",
 			"organization-name": "Casa Museo Lope de Vega"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4949641-casita-museo-raton-perez.json",
@@ -134,7 +137,8 @@
 			"services": "",
 			"organization-name": "Casita - Museo del Ratón Pérez"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5682031-castillo-alameda.json",
@@ -164,7 +168,8 @@
 			"services": "Zona wifi.",
 			"organization-name": "Castillo de la Alameda"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2064-cason-buen-retiro-.json",
@@ -194,7 +199,8 @@
 			"services": "",
 			"organization-name": "Casón del Buen Retiro."
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2069-centro-cultural-corrala-museo-artes-tradiciones-populares.json",
@@ -224,7 +230,8 @@
 			"services": "Las visitas individuales (grupos inferiores a 7 personas) no necesitan reserva previa. Reservas (Grupos de 8 a 20 personas máximo).",
 			"organization-name": "Centro Cultural La Corrala. Museo de Artes y Tradiciones Populares"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6469186-ermita-san-antonio-florida-museo-.json",
@@ -254,7 +261,8 @@
 			"services": "Tienda, en la que se pueden adquirir las guías y publicaciones sobre la ermita editadas por el Museo y otros organismos públicos, así como catálogos y publicaciones de instituciones culturales del Ayuntamiento de Madrid.",
 			"organization-name": "Ermita de San Antonio de la Florida (Museo)"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/58353-espacio-fundacion-telefonica.json",
@@ -284,7 +292,8 @@
 			"services": "",
 			"organization-name": "Espacio Fundación Telefónica"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12324237-fronton-beti-jai.json",
@@ -314,7 +323,8 @@
 			"services": "",
 			"organization-name": "Frontón Beti Jai"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/12329440-galeria-colecciones-reales.json",
@@ -344,7 +354,8 @@
 			"services": "Hay audioguías interactivas disponibles in situ.",
 			"organization-name": "Galería de la Colecciones Reales"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/103331-casa-encendida-fundacion-montemadrid.json",
@@ -374,7 +385,8 @@
 			"services": "Biblioteca, mediateca, hemeroteca, espacio para el voluntariado Cafetería Terraza &amp;ndash; café bar Visitas guiadas",
 			"organization-name": "La Casa Encendida de la Fundación Montemadrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5873478-museo-abc.json",
@@ -404,7 +416,8 @@
 			"services": "",
 			"organization-name": "Museo ABC"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2067-museo-africano-misioneros-combonianos.json",
@@ -434,7 +447,8 @@
 			"services": "",
 			"organization-name": "Museo Africano Misioneros Combonianos"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2050-museo-arqueologico-nacional.json",
@@ -464,7 +478,8 @@
 			"services": "El Museo ofrece a los visitantes las siguientes facilidades para hacer la visita:   Punto de información  Punto de encuentro  Guardarropa y Consigna  Cambiadores de bebé  Sala de lactancia  Sillas de bebé  Fuente de agua  Tablillas para escribir  Guía multimedia  Información",
 			"organization-name": "Museo Arqueológico Nacional"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2072-museo-casa-moneda.json",
@@ -494,7 +509,8 @@
 			"services": "",
 			"organization-name": "Museo Casa de la Moneda"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4112-museo-cerralbo.json",
@@ -524,7 +540,8 @@
 			"services": "",
 			"organization-name": "Museo Cerralbo"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10091450-museo-emt.json",
@@ -554,7 +571,8 @@
 			"services": "Si tiene una discapacidad física o sensorial, contacta con el Museo antes de reservar la visita y le informarán de la accesibilidad a la instalación.",
 			"organization-name": "Museo EMT"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10237457-museo-felix-canada.json",
@@ -584,7 +602,8 @@
 			"services": "",
 			"organization-name": "Museo Félix Cañada"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2074-museo-geominero.json",
@@ -614,7 +633,8 @@
 			"services": "",
 			"organization-name": "Museo Geominero"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 2
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2075-museo-historico-minero-don-felipe-borbon-grecia.json",
@@ -644,7 +664,8 @@
 			"services": "",
 			"organization-name": "Museo Histórico Minero Don Felipe de Borbón y Grecia"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/18176-museo-ico.json",
@@ -674,7 +695,8 @@
 			"services": "",
 			"organization-name": "Museo ICO"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6019032-museo-canos-peral-estacion-metro-opera.json",
@@ -704,7 +726,8 @@
 			"services": "",
 			"organization-name": "Museo Los Caños del Peral. Estación de Metro Ópera"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2053-museo-lazaro-galdiano.json",
@@ -734,7 +757,8 @@
 			"services": "",
 			"organization-name": "Museo Lázaro Galdiano"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5349304-museo-nacional-centro-arte-reina-sofia-mncars-.json",
@@ -764,7 +788,8 @@
 			"services": "",
 			"organization-name": "Museo Nacional Centro de Arte Reina Sofía (MNCARS)"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2099-museo-nacional-thyssen-bornemisza.json",
@@ -794,7 +819,8 @@
 			"services": "",
 			"organization-name": "Museo Nacional Thyssen-Bornemisza"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2057-museo-nacional-antropologia.json",
@@ -824,7 +850,8 @@
 			"services": "",
 			"organization-name": "Museo Nacional de Antropología"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2055-museo-nacional-artes-decorativas.json",
@@ -854,7 +881,8 @@
 			"services": "",
 			"organization-name": "Museo Nacional de Artes Decorativas"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2056-museo-nacional-ciencias-naturales.json",
@@ -884,7 +912,8 @@
 			"services": "",
 			"organization-name": "Museo Nacional de Ciencias Naturales"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2076-museo-naval.json",
@@ -914,7 +943,8 @@
 			"services": "",
 			"organization-name": "Museo Naval"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2085-museo-postal-telegrafico.json",
@@ -944,7 +974,8 @@
 			"services": "Bus: 161",
 			"organization-name": "Museo Postal y Telegráfico"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4997114-museo-sorolla.json",
@@ -974,7 +1005,8 @@
 			"services": "",
 			"organization-name": "Museo Sorolla"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2077-museo-taurino-comunidad-madrid.json",
@@ -1004,7 +1036,8 @@
 			"services": "",
 			"organization-name": "Museo Taurino de la Comunidad de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2101-museo-tiflologico.json",
@@ -1034,7 +1067,8 @@
 			"services": "",
 			"organization-name": "Museo Tiflológico"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 2
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2068-museo-aeronautica-astronautica.json",
@@ -1064,7 +1098,8 @@
 			"services": "Aparcamiento: gratuito, de 10 a 14 horas. Cafetería: de 10 a 13:30 horas. Punto de venta: de 10 a 13:30 horas.  Visitas guiadas para grupos: de martes a domingo de 10 a 14 horas. Previa petición de autorización por carta o correo electrónico ( museodelaire@ea.mde.es  ). Se recomienda anticipar las peticiones por teléfono de lunes a viernes.",
 			"organization-name": "Museo de Aeronáutica y Astronáutica"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2091-museo-america.json",
@@ -1094,7 +1129,8 @@
 			"services": "",
 			"organization-name": "Museo de América"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 10
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/83922-museo-arte-contemporaneo-madrid.json",
@@ -1124,7 +1160,8 @@
 			"services": "Zona wifi.",
 			"organization-name": "Museo de Arte Contemporáneo de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2092-museo-astronomia-geodesia.json",
@@ -1154,7 +1191,8 @@
 			"services": "",
 			"organization-name": "Museo de Astronomía y Geodesia"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/5727435-museo-bomberos-madrid.json",
@@ -1184,7 +1222,8 @@
 			"services": "El acceso se realizará mediante RESERVA en el que aparecerán las sesiones y plazas disponibles.    Visitas guiadas    El personal del museo mostrará al visitante la exposición permanente, que cuenta con una interesante colección de vehículos y otros materiales que han formado parte de la Historia del Cuerpo de Bomberos de Madrid.      Actividades del Grupo Pedagógico con visitas de colegios    Se realizan visitas guiadas a colegios, demostraciones prácticas y charlas de prevención    Sala polivalente     Puede ser utilizada para la organización de charlas, encuentros y otras actividades culturales.",
 			"organization-name": "Museo de Bomberos de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2090-museo-calcografia-nacional.json",
@@ -1214,7 +1253,8 @@
 			"services": "",
 			"organization-name": "Museo de Calcografía Nacional"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2084-museo-cera.json",
@@ -1244,7 +1284,8 @@
 			"services": "",
 			"organization-name": "Museo de Cera"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2071-museo-escultura-al-aire-libre-castellana.json",
@@ -1274,7 +1315,8 @@
 			"services": "",
 			"organization-name": "Museo de Escultura al Aire Libre de la Castellana"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 2
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2054-museo-historia-madrid.json",
@@ -1304,7 +1346,8 @@
 			"services": "Biblioteca de investigación Servicio de documentación Guardarropa Zona wifi Las reservas se realizarán a través de esta  plataforma",
 			"organization-name": "Museo de Historia de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4545827-museo-historia-comunidad-judia-madrid.json",
@@ -1334,7 +1377,8 @@
 			"services": "Visitas: info@cjmadrid.org",
 			"organization-name": "Museo de Historia de la Comunidad Judía de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2095-museo-mineralogia.json",
@@ -1364,7 +1408,8 @@
 			"services": "",
 			"organization-name": "Museo de Mineralogía"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2112-museo-san-isidro-origenes-madrid.json",
@@ -1394,7 +1439,8 @@
 			"services": "Sala de investigadores Biblioteca especializada en arqueología e historia madrileña Archivo documental Almacén visitable con más de 600 piezas arqueológicas (por cuestiones técnicas el almacén visitable puede estar cerrado durante su visita, en tal caso pregunte en el mostrador de entrada para que le faciliten el acceso) Jardín arqueobotánico, con información documentada sobre las especies de la ciudad (en estos momentos se encuentra cerrado por obras de rehabilitación) Investigadores: los fondos del Museo están a disposición de la comunidad científica y los investigadores podrán acceder tramitando su correspondiente solicitud Visitas guiadas por voluntarios culturales de CEATE Talleres didácticos para grupos escolares Zona wifi",
 			"organization-name": "Museo de San Isidro. Los Orígenes de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/85301-museo-sanidad-higiene-publica.json",
@@ -1424,7 +1470,8 @@
 			"services": "Solicitud de cita previa enviando formulario a museodesanidad@isciii.es.",
 			"organization-name": "Museo de Sanidad e Higiene Pública"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4566286-museo-catedral-almudena.json",
@@ -1454,7 +1501,8 @@
 			"services": "",
 			"organization-name": "Museo de la Catedral de la Almudena"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2073-museo-farmacia-hispana.json",
@@ -1484,7 +1532,8 @@
 			"services": "",
 			"organization-name": "Museo de la Farmacia Hispana"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 2
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2107-museo-guardia-civil.json",
@@ -1514,7 +1563,8 @@
 			"services": "",
 			"organization-name": "Museo de la Guardia Civil"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2114-museo-real-academia-bellas-artes-san-fernando.json",
@@ -1544,7 +1594,8 @@
 			"services": "",
 			"organization-name": "Museo de la Real Academia de Bellas Artes de San Fernando"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2066-museo-ferrocarril-madrid.json",
@@ -1574,7 +1625,8 @@
 			"services": "Mercado de Motores : segundo fin de semana del mes (excepto julio y agosto), de 11 a 21 horas. El Museo cierra en su actividad ordinaria y el acceso es gratuito (www.mercadodemotores.es).",
 			"organization-name": "Museo del Ferrocarril de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 2
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2058-museo-prado.json",
@@ -1604,7 +1656,8 @@
 			"services": "",
 			"organization-name": "Museo del Prado"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2086-museo-reloj-grassy.json",
@@ -1634,7 +1687,8 @@
 			"services": "",
 			"organization-name": "Museo del Reloj Grassy"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2059-museo-romanticismo.json",
@@ -1664,7 +1718,8 @@
 			"services": "",
 			"organization-name": "Museo del Romanticismo"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/6337393-museo-seguro-fundacion-mapfre.json",
@@ -1694,7 +1749,8 @@
 			"services": "",
 			"organization-name": "Museo del Seguro. Fundación Mapfre"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2115-museo-traje-centro-investigacion-patrimonio-etnologico-cipe-.json",
@@ -1724,7 +1780,8 @@
 			"services": "",
 			"organization-name": "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2061-palacio-real-pardo.json",
@@ -1754,7 +1811,8 @@
 			"services": "Casa del Príncipe Don Carlos, reserva previa en teléfono 913 761 500.",
 			"organization-name": "Palacio Real de El Pardo"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2062-palacio-real-madrid.json",
@@ -1784,7 +1842,8 @@
 			"services": "Relevo solemne de la Guardia en el Palacio Real de Madrid  La Guardia Real realiza este relevo los primeros miércoles de cada mes, a las 12 horas (excepcionalmente puede haber cambios, consultar en http://www.guardiareal.org/. El acto tiene una duración aproximada de 50 minutos, y se desarrolla en la Plaza de la Armería, finalizando con un concierto de la Unidad de Música en la Puerta del Príncipe (calle Bailén). La entrada es libre y gratuita, hasta completar aforo. Se accede por el Arco de Santiago (calle Bailén esquina con Requena). No se celebra en enero, agosto y septiembre, ni cuando coincide con actos oficiales.   Relevo de la Guardia en la Puerta del Príncipe del Palacio Real de Madrid  El acto se lleva a cabo todos los miércoles y sábados del mes, siempre y cuando los actos oficiales o la climatología lo permitan.  Durante el invierno (septiembre a junio a. i.) se desarrolla entre las 11 y las 14 horas. Durante el verano (julio y agosto) tiene lugar entre las 10 y las 12 horas  Tiene lugar en la calle Bailén.",
 			"organization-name": "Palacio Real de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2079-panteon-espana.json",
@@ -1814,7 +1873,8 @@
 			"services": "",
 			"organization-name": "Panteón de España"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3362-parroquia-santa-cruz.json",
@@ -1844,7 +1904,8 @@
 			"services": "",
 			"organization-name": "Parroquia Santa Cruz"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2213-planetario-madrid.json",
@@ -1874,7 +1935,8 @@
 			"services": "Sala de Proyección. Planta calle. Para acceder a ella es necesario adquirir una entrada.   Cuatro áreas expositivas de acceso gratuito, distribuidas en dos plantas:   Sala de Astrónomos. Planta baja. Vestíbulo de la planta baja. Vestíbulo de la planta calle. Zona Audiovisual con pantalla de retroproyección. Planta calle.      Tienda: Planta calle.   Sala de Video. Planta baja, en donde se desarrollan los talleres ofertados.    Zona wifi.",
 			"organization-name": "Planetario de Madrid"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 8
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3359-real-basilica-san-francisco-grande.json",
@@ -1904,7 +1966,8 @@
 			"services": "",
 			"organization-name": "Real Basílica San Francisco el Grande"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/2087-real-fabrica-tapices.json",
@@ -1934,7 +1997,8 @@
 			"services": "",
 			"organization-name": "Real Fábrica de Tapices"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/4707297-real-monasterio-santa-isabel.json",
@@ -1964,7 +2028,8 @@
 			"services": "",
 			"organization-name": "Real Monasterio de Santa Isabel"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3349-real-monasterio-encarnacion.json",
@@ -1994,7 +2059,8 @@
 			"services": "",
 			"organization-name": "Real Monasterio de la Encarnación"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/3348-real-monasterio-descalzas-reales.json",
@@ -2024,7 +2090,8 @@
 			"services": "",
 			"organization-name": "Real Monasterio de las Descalzas Reales"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/20605-templo-debod.json",
@@ -2054,7 +2121,8 @@
 			"services": "Obtención de información sobre sus fondos y colecciones con fines de investigación, enseñanza o difusión.   Se pueden realizar fotografías o grabaciones de vídeo libremente en el exterior o en el interior del templo, siempre y cuando no se utilicen flash o trípode y su fin no sea comercial. Para la obtención de reproducciones de fotografías del archivo del templo de Debod con fines editoriales, de investigación, difusión o comerciales el interesado deberá cumplimentar la solicitud de Reproducciones Fotográficas. La realización de reportajes fotográficos y grabaciones profesionales en el recinto del templo de Debod (estanque delantero, plataformas y edificio) sólo será autorizada cuando los fines para los que se solicita sean la divulgación y difusión cultural del monumento o de las actividades museísticas que en él se desarrollen. Cualquier otra finalidad, gratuita o comercial, será desestimada. El horario de información telefónica y telemática del Templo de Debod es de lunes a viernes de 8 a 15 horas. Fuera de este horario puede utilizar el teléfono gratuito de Línea Madridl 010 (915 298 210, si llama desde fuera de la ciudad de Madrid, con el prefijo 34 si llama desde fuera de España). Zona wifi.",
 			"organization-name": "Templo de Debod"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/7685664-the-robot-museum-museo-robot-.json",
@@ -2084,7 +2152,8 @@
 			"services": "",
 			"organization-name": "The Robot Museum (Museo del Robot)"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/7071384-yacimiento-paleontologico-estacion-metro-carpetana.json",
@@ -2114,7 +2183,8 @@
 			"services": "",
 			"organization-name": "Yacimiento paleontológico. Estación de Metro Carpetana"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	},
 	{
 		"@id": "https://datos.madrid.es/egob/catalogo/tipo/entidadesyorganismos/10873287-zapadores-ciudad-arte.json",
@@ -2144,7 +2214,8 @@
 			"services": "",
 			"organization-name": "Zapadores Ciudad del Arte"
 		},
-		"visit_time": 2
+		"visit_time": 2,
+		"priority": 5
 	}	  
   ]
 }
