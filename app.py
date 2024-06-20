@@ -13,6 +13,7 @@ El objetivo de esta aplicación es ayudar a los usuarios a organizar su itinerar
 - app.py: Código fuente de la aplicación.
 - requirements.txt: Archivo con las dependencias necesarias para ejecutar la aplicación.
 - museos.json: Archivo JSON con la información de los museos en Madrid descargado del sitio web del Ministerio para la Transformación digital, en el enlace https://datos.gob.es/en/catalogo/l01280796-museos-de-la-ciudad-de-madrid
+- run-example.txt: Archivo con un ejemplo de ejecución de la aplicación.
 
 Datos agregados a museos.json:
 - visit_time: Tiempo estimado de visita en horas, por defecto 2, a ajustar en función de la realidad.
@@ -54,7 +55,11 @@ from math import radians, cos, sin, asin, sqrt
 from sklearn.cluster import KMeans
 import googlemaps
 
+print("\nBienvenido a la aplicación de planificación de visitas a museos en Madrid.\n")
+
 # ----data----
+
+print("Cargando datos de los museos en Madrid...\n")
 
 # Cargar datos JSON
 with open('museos.json') as f:

@@ -1,0 +1,77 @@
+python app.py
+
+Bienvenido a la aplicación de planificación de visitas a museos en Madrid.
+
+Cargando datos de los museos en Madrid...
+
+Ingrese el número de días: 3
+Ingrese la distancia máxima por día (en kilómetros): 8
+Ingrese el tiempo máximo por día (en horas): 7
+
+**********************
+Día 1:
+**********************
+
+--------------------------
+Comienza en Casón del Buen Retiro.
+--------------------------
+
+--------------------------
+Desde: Casón del Buen Retiro. hasta Museo Arqueológico Nacional
+--------------------------
+Camina hasta Casón Del Buen Retiro
+Autobus en dirección a Plaza Cataluña
+Camina hasta C. de Serrano, 13, Salamanca, 28001 Madrid, España
+
+--------------------------
+Desde: Museo Arqueológico Nacional hasta Museo Cerralbo
+--------------------------
+Camina hasta Museo Arqueológico
+Autobus en dirección a Pintor Rosales
+Camina hasta C. de Ventura Rodríguez, 17, Moncloa - Aravaca, 28008 Madrid, España
+
+**********************
+Día 2:
+**********************
+
+--------------------------
+Comienza en Planetario de Madrid
+--------------------------
+
+--------------------------
+Desde: Planetario de Madrid hasta Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)
+--------------------------
+Camina hasta Arganzuela-Planetario
+Metro en dirección a Laguna
+Camina hasta Av. Juan Herrera - Pza. Cardenal Cisneros, Moncloa - Aravaca, 28040 Madrid, España
+
+--------------------------
+Desde: Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE) hasta Museo del Romanticismo
+--------------------------
+Camina hasta Ciudad Universitaria
+Metro en dirección a Laguna
+Camina hasta Argüelles
+Metro en dirección a Pinar De Chamartin
+Camina hasta C. de San Mateo, 13, Centro, 28004 Madrid, España
+
+**********************
+Día 3:
+**********************
+
+--------------------------
+Comienza en Museo de América
+--------------------------
+
+--------------------------
+Desde: Museo de América hasta Museo Sorolla
+--------------------------
+Camina hasta Fernández De Los Ríos - Hilarión Eslava
+Autobus en dirección a Pio XII
+Camina hasta P.º de Francisco Giner, 29, Chamberí, 28010 Madrid, España
+
+--------------------------
+Desde: Museo Sorolla hasta Museo del Seguro. Fundación Mapfre
+--------------------------
+Camina hasta Emilio Castelar
+Autobus en dirección a Conde de Casal
+Camina hasta C/ de Bárbara de Braganza, 22, Centro, 28004 Madrid, España
