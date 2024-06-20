@@ -1,4 +1,53 @@
-# pip install numpy scikit-learn googlemaps
+"""
+----Descripción----
+
+Aplicación de planificación de visitas a museos en Madrid.
+
+Esta aplicación permite planificar la visita a museos en Madrid en función de la distancia y el tiempo de visita.
+Utiliza técnicas de clustering para agrupar los museos en diferentes días y optimiza la ruta de visita utilizando la API de Google Maps.
+
+El objetivo de esta aplicación es ayudar a los usuarios a organizar su itinerario de visitas a museos de manera eficiente y optimizada.
+
+----Estructura de archivos----
+
+- app.py: Código fuente de la aplicación.
+- requirements.txt: Archivo con las dependencias necesarias para ejecutar la aplicación.
+- museos.json: Archivo JSON con la información de los museos en Madrid descargado del sitio web del Ministerio para la Transformación digital, en el enlace https://datos.gob.es/en/catalogo/l01280796-museos-de-la-ciudad-de-madrid
+
+Datos agregados a museos.json:
+- visit_time: Tiempo estimado de visita en horas, por defecto 2, a ajustar en función de la realidad.
+- priority: Prioridad de visita, donde 1 es la menor y 10 la mayor, a ajustar en función de las preferencias del usuario.
+
+----Instrucciones de uso----
+
+1. Instalar las librerías necesarias ejecutando el siguiente comando en la terminal:
+  'pip install numpy scikit-learn googlemaps'
+  O si tienes un archivo requirements.txt puedes instalar todas las dependencias con:
+  'pip install -r requirements.txt'
+
+2. Ejecutar el script 'app.py' en la terminal:
+  'python app.py'
+
+3. Ingresar el número de días que se desea planificar la visita a los museos.
+4. Ingresar la distancia máxima en kilómetros que se desea recorrer por día.
+5. Ingresar el tiempo máximo en horas que se desea dedicar a la visita de museos por día.
+
+La aplicación mostrará la ruta optimizada para cada día de visita, indicando los museos a visitar y las instrucciones para llegar de un museo a otro.
+
+----Valor diferenciador----
+
+El valor diferenciador de esta aplicación es la combinación de técnicas de clustering para agrupar los museos en diferentes días y la optimización de la ruta de visita utilizando la API de Google Maps.
+Esto permite a los usuarios planificar su itinerario de visitas de manera eficiente y optimizada, maximizando el tiempo y minimizando la distancia recorrida.
+
+----
+
+Autor: Daniel Antonio Tala de Dompierre de Chaufepie
+"""
+
+
+
+# ----Librerías----
+
 import json
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
