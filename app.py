@@ -19,19 +19,21 @@ Datos agregados a museos.json:
 - visit_time: Tiempo estimado de visita en horas, por defecto 2, a ajustar en función de la realidad.
 - priority: Prioridad de visita, donde 1 es la menor y 10 la mayor, a ajustar en función de las preferencias del usuario.
 
-----Instrucciones de uso----
+----Requisitos previos----
 
-1. Instalar las librerías necesarias ejecutando el siguiente comando en la terminal:
+- Python 3.x, esto fue probado con Python 3.10.
+- Instalar las librerías necesarias ejecutando el siguiente comando en la terminal:
   'pip install numpy scikit-learn googlemaps'
   O si tienes un archivo requirements.txt puedes instalar todas las dependencias con:
   'pip install -r requirements.txt'
 
-2. Ejecutar el script 'app.py' en la terminal:
-  'python app.py'
+----Instrucciones de uso----
 
-3. Ingresar el número de días que se desea planificar la visita a los museos.
-4. Ingresar la distancia máxima en kilómetros que se desea recorrer por día.
-5. Ingresar el tiempo máximo en horas que se desea dedicar a la visita de museos por día.
+1. Ejecutar el script 'app.py' en la terminal:
+  'python app.py'
+2. Ingresar el número de días que se desea planificar la visita a los museos.
+3. Ingresar la distancia máxima en kilómetros que se desea recorrer por día.
+4. Ingresar el tiempo máximo en horas que se desea dedicar a la visita de museos por día.
 
 La aplicación mostrará la ruta optimizada para cada día de visita, indicando los museos a visitar y las instrucciones para llegar de un museo a otro.
 
