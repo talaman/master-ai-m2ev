@@ -12,7 +12,7 @@ El objetivo de esta aplicación es ayudar a los usuarios a organizar su itinerar
 
 - app.py: Código fuente de la aplicación.
 - requirements.txt: Archivo con las dependencias necesarias para ejecutar la aplicación.
-- museos.json: Archivo JSON con la información de los museos en Madrid descargado del sitio web del Ministerio para la Transformación digital, en el enlace https://datos.gob.es/en/catalogo/l01280796-museos-de-la-ciudad-de-madrid
+- museos.json: Archivo JSON con la información de los museos en Madrid descargado del sitio web del Ministerio para la Transformación digital, en el enlace https://datos.gob.es/en/catalogo/l01280796-museos-de-la-ciudad-de-madrid, se ha añadido información adicional como el tiempo estimado de visita y la prioridad de visita.
 - run-example.txt: Archivo con un ejemplo de ejecución de la aplicación.
 
 Datos agregados a museos.json:
@@ -21,7 +21,7 @@ Datos agregados a museos.json:
 
 ----Requisitos previos----
 
-- Python 3.x, esto fue probado con Python 3.10.
+- Esto fue probado con Python 3.10, pero debería funcionar con otras versiones de Python 3.
 - Instalar las librerías necesarias ejecutando el siguiente comando en la terminal:
   'pip install numpy scikit-learn googlemaps'
   O si tienes un archivo requirements.txt puedes instalar todas las dependencias con:
