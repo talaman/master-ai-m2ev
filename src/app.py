@@ -150,7 +150,7 @@ for day, museums in clusters.items():
 # ----Optimizar la ruta----
 
 # Inicializar cliente de Google Maps
-gmaps = googlemaps.Client(key='AIzaSyARvB2VPh9VAMXq6AmiXNbvhnf24YZ2ybk')  # Esta key dejará de funcionar el 1 de agosto de 2025
+gmaps = googlemaps.Client(key='YOUR_KEY')  
 
 def get_route(museums):
     waypoints = [f"{museum['latitude']},{museum['longitude']}" for museum in museums]
